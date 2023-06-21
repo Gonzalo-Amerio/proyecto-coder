@@ -6,22 +6,116 @@
 }
 /* Termina el reseteo */
 
+/* Tipografia */
+*{
+    font-family:'Poppins', sans-serif;;
+}
+
 /* Mobile index */
+body{
+    background-color:#586F6B;
+}
+
 .img-logo{
     width: 75px;
     height: 75px;
 }
 
-.nav-color--index{
-    background-color: #A0C49D;
+/* Nav-index */
+.bg-color--index{
+    background-color: #EBECDF;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     color: #ffffff;
 }
 
 .drop-menu-color{
-    background-color: floralwhite;
+    background-color: #ffffff;
+}
+/* Termina nav-index */
+
+/* Comienza main */
+
+.img-index {
+    width: 100vw;
+    height: 40vh; 
 }
 
 
+.h1-color--index{
+    color:#EBECDF;
+}
 
+.col-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-outline-success{
+    color: #FFFFFF;
+    border-color: black;
+
+}
+
+
+/* Termina el main */
+
+/* Comienza el footer */
+.custom-footer {
+    background-color: #EBECDF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #000000;
+}
+
+.custom-footer h4 {
+    color: #000000; /* Color de los títulos en negro */
+    margin-bottom: 10px;
+}
+
+.custom-footer ul li a {
+    color: #000000; /* Color de los enlaces en negro */
+}
+
+.custom-footer ul.social-icons li a {
+    color: #000000; /* Color de los iconos de redes sociales en negro */
+}
+
+.custom-footer ul.social-icons li a:hover {
+    color: #555555; /* Cambio de color al pasar el mouse sobre los iconos de redes sociales */
+}
+
+.list-inline.dflex,i{
+    font-size:1.8rem;
+}
+/* Termina footer */
+
+/* Seccion Sobre nosotros */
+
+.col-lg-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Termina seccion sobre nosotros */
+
+/* Seccion contacto */
+
+.contacto{
+    padding-bottom: 8rem;
+}
+
+.btn-primary{
+    color: #000000;
+    background-color: #586F6B;
+    border: none;
+}
+/* Termina seccion contacto */
+
+/* Paginas en construccion */
+footer-construccion{
+    padding-bottom: 50px;
+}
