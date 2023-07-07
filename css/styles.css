@@ -10,8 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../../img/hombre-bateria.jpg);
-  background-size: contain;
+  background: url(../../img/drums-dw.jpg);
+  background-size: cover;
   background-position: center;
 }
 .container-fluid .container-texto {
