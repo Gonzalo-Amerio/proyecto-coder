@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;800&family=Merriweather:ital,wght@1,700&family=Poppins:wght@200;400;500&family=Rubik+Puddles&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 
 .container-fluid {
@@ -10,21 +12,150 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../../img/drums-dw.jpg);
+  background: url(../../img/header-solidrums.jpg);
   background-size: cover;
   background-position: center;
 }
 .container-fluid .container-texto {
-  color: rgb(251, 251, 251);
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  font-family: "League Spartan", sans-serif;
+}
+
+footer {
+  margin-top: 20px;
+}
+footer .footer-section {
+  text-align: center;
+}
+footer .footer-section .logo-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+footer .footer-section .section-title {
+  margin-bottom: 15px;
+}
+footer .footer-section .section-text {
+  margin-bottom: 20px;
+}
+footer .footer-section .gallery .col-4 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+footer .footer-section .newsletter-form {
+  text-align: center;
 }
 
 .navbar-brand img {
   height: 150px;
   width: 150px;
+}
+
+.navbar-nav .navbar-item {
+  padding: 1rem;
+}
+
+button {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:focus,
+button:hover {
+  color: #fff;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card__title {
+  font-size: 23px;
+  font-weight: 900;
+  color: #333;
+}
+.card__content {
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.card__form input {
+  width: 100%;
+  max-width: 280px;
+  outline: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid #333;
+  color: black;
+}
+.card__form button {
+  width: 100%;
+  max-width: 280px;
+  border: 0;
+  background: #111;
+  color: #fff;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: bold;
+}
+.card .sign-up:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=styles.css.map */
