@@ -108,6 +108,39 @@ button:after {
   border: none;
 }
 
+.button-header {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #ffffff;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "League Spartan", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  /* this is the text, when you hover on button */
+  /* hover */
+}
+.button-header .hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+.button-header:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
 .card {
   width: 100%;
   padding: 20px;
@@ -160,8 +193,8 @@ button:after {
 
 .hero-section--galeria {
   height: 40vh;
-  background-image: url("../../img/drums-dw.jpg");
-  background-size: cover;
+  background-image: url("../../img/drums-fondo.jpg");
+  background-size: contain;
   background-position: center;
   display: flex;
   align-items: center;
@@ -312,10 +345,169 @@ button:after {
   font-size: 18px;
   margin-bottom: 0;
 }
+
+.hero-section--bandas {
+  height: 40vh;
+  background-image: url("../../img/green-day13881.jpg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  font-size: 20px;
+}
+
+.gallery-section {
+  padding: 40px 0;
+}
+.gallery-section .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gallery-section hr {
+  border-top: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.gallery-section .gallery-item {
+  margin-bottom: 30px;
+}
+.gallery-section .gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  padding: 40px 0;
+}
+.card hr {
+  border-top: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.card .card-item {
+  position: relative;
+}
+.card .card-item img {
+  max-width: 100%;
+  height: auto;
+}
+.card .card-item .card-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.card .card-item .card-caption h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+}
 .card .card-item.animate-slideOutUp:hover .card-caption {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
+}
+
+.card-icons {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.container-sobre-nosotros {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../img/travis-barker-gq-17-BW.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

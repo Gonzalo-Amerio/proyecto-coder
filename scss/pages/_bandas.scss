@@ -1,6 +1,6 @@
-.hero-section--artistas {
+.hero-section--bandas {
     height: 40vh;
-    background-image: url('../../img/sjc-drums-chico.jpg');
+    background-image: url('../../img/green-day13881.jpg');
     background-size:contain;
     background-position: center;
     display: flex;
@@ -80,6 +80,14 @@
           color: #fff;
           font-size: 18px;
           margin-bottom: 0;
+        }
+      }
+  
+      &.animate-slideOutUp:hover {
+        .card-caption {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-20px);
         }
       }
     }
