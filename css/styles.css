@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/header-solidrums.jpg);
+  background: url(../../img/header-solidrums.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -191,241 +191,6 @@ button:after {
   opacity: 0.8;
 }
 
-.hero-section--galeria {
-  height: 40vh;
-  background-image: url("../img/drums-fondo.jpg");
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
-  color: #fff;
-}
-
-.hero-title {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero-description {
-  font-size: 20px;
-}
-
-.gallery-section {
-  padding: 40px 0;
-}
-.gallery-section .section-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.gallery-section hr {
-  border-top: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.gallery-section .gallery-item {
-  margin-bottom: 30px;
-}
-.gallery-section .gallery-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.card {
-  padding: 40px 0;
-}
-.card hr {
-  border-top: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.card .card-item {
-  position: relative;
-}
-.card .card-item img {
-  max-width: 100%;
-  height: auto;
-}
-.card .card-item .card-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-}
-.card .card-item .card-caption h4 {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 0;
-}
-.card .card-item.animate-slideOutUp:hover .card-caption {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-}
-
-.hero-section--artistas {
-  height: 40vh;
-  background-image: url("../img/sjc-drums-chico.jpg");
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
-  color: #fff;
-}
-
-.hero-title {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero-description {
-  font-size: 20px;
-}
-
-.gallery-section {
-  padding: 40px 0;
-}
-.gallery-section .section-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.gallery-section hr {
-  border-top: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.gallery-section .gallery-item {
-  margin-bottom: 30px;
-}
-.gallery-section .gallery-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.card {
-  padding: 40px 0;
-}
-.card hr {
-  border-top: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.card .card-item {
-  position: relative;
-}
-.card .card-item img {
-  max-width: 100%;
-  height: auto;
-}
-.card .card-item .card-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-}
-.card .card-item .card-caption h4 {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 0;
-}
-
-.hero-section--bandas {
-  height: 40vh;
-  background-image: url("../img/green-day13881.jpg");
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
-  color: #fff;
-}
-
-.hero-title {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero-description {
-  font-size: 20px;
-}
-
-.gallery-section {
-  padding: 40px 0;
-}
-.gallery-section .section-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.gallery-section hr {
-  border-top: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.gallery-section .gallery-item {
-  margin-bottom: 30px;
-}
-.gallery-section .gallery-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.card {
-  padding: 40px 0;
-}
-.card hr {
-  border-top: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.card .card-item {
-  position: relative;
-}
-.card .card-item img {
-  max-width: 100%;
-  height: auto;
-}
-.card .card-item .card-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-}
-.card .card-item .card-caption h4 {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 0;
-}
-.card .card-item.animate-slideOutUp:hover .card-caption {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-}
-
 .card-icons {
   width: fit-content;
   height: fit-content;
@@ -499,15 +264,114 @@ button:after {
     opacity: 1;
   }
 }
+.card {
+  padding: 40px 0;
+}
+.card hr {
+  border-top: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.card .card-item {
+  position: relative;
+}
+.card .card-item img {
+  max-width: 100%;
+  height: auto;
+}
+.card .card-item .card-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.card .card-item .card-caption h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
 .container-sobre-nosotros {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/travis-barker-gq-17-BW.webp);
+  background: url(../../img/travis-barker-gq-17-BW.webp);
   background-size: cover;
   background-position: center;
+}
+
+.hero-section {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .hero-content {
+  text-align: center;
+  color: #fff;
+}
+.hero-section .hero-content .hero-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.hero-section .hero-content .hero-description {
+  font-size: 20px;
+}
+
+.gallery-section {
+  padding: 40px 0;
+}
+.gallery-section .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gallery-section hr {
+  border-top: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.gallery-section .gallery-item {
+  margin-bottom: 30px;
+}
+.gallery-section .gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-galeria {
+  height: 40vh;
+  background-image: url("../../img/drums-fondo.jpg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-bandas {
+  height: 40vh;
+  background-image: url("../../img/green-day13881.jpg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-artistas {
+  height: 40vh;
+  background-image: url("../../img/sjc-drums-chico.jpg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
